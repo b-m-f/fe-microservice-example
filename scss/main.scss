@@ -1,3 +1,25 @@
-body {
+html, body {
+  height: 100%;
+}
+
+.grid-container {
+  height: 100%;
   display: grid;
+  grid-template-columns: 33.3% 33.3% auto;
+  grid-template-rows: 100%;
+}
+
+#first {
+  text-align: center;
+  background-color: #333333;
+}
+
+#second {
+  text-align: center;
+  background-color: #666666;
+}
+
+#third {
+  text-align: center;
+  background-color: #AAAAAA;
 }

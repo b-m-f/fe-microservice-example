@@ -26,10 +26,6 @@ gulp.task('sass', function() {
 // process JS files and return the stream.
 gulp.task('js', function () {
   return gulp.src('js/*js')
-    .pipe(babel({
-      presets: ['es2015']
-    }))
-    .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
 });
 
