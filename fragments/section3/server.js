@@ -14,8 +14,6 @@ app.get('/', (req, res) => {
   res.send(JSON.stringify({ fragment: html }));
 });
 
-app.use('/static', express.static(__dirname + '/public'));
-
 const port = 3103;
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
